@@ -1,0 +1,53 @@
+{
+    "date": "2026-02-06 20:26",
+    "experiment_name": "Logistic Regression Classification",
+    "results": {
+        "performance_estimation": {
+            "description": "Performance estimated via nested cross-validation",
+            "nested_cv": {
+                "accuracy": {
+                    "scores_mean": 0.8,
+                    "scores_std": 0.021931567011525398,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.7695541040607664,
+                        "upper_bound": 0.8304458959392337,
+                        "margin_of_error": 0.030445895939233598,
+                        "standard_error": 0.010965783505762697
+                    }
+                },
+                "f1_macro": {
+                    "scores_mean": 0.6816046831485408,
+                    "scores_std": 0.036856595521413814,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.6304395260336986,
+                        "upper_bound": 0.7327698402633831,
+                        "margin_of_error": 0.051165157114842236,
+                        "standard_error": 0.018428297760706903
+                    }
+                }
+            }
+        },
+        "final_model": {
+            "description": "Best parameters found by fitting GridSearchCV on the entire dataset",
+            "best_params": {
+                "dim_reduction__n_components": 10,
+                "model__C": 1.0,
+                "model__max_iter": 1000,
+                "model__penalty": "l1",
+                "model__solver": "liblinear"
+            },
+            "best_score_metric": "accuracy",
+            "best_score": 0.8062893081761007
+        },
+        "test_performance": {
+            "accuracy": 0.8484848484848485,
+            "f1_macro": 0.7771942985746436,
+            "precision_macro": 0.8209876543209876,
+            "recall_macro": 0.752972972972973,
+            "precision_weighted": 0.8423743608928794,
+            "recall_weighted": 0.8484848484848485
+        }
+    }
+}

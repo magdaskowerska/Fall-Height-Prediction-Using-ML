@@ -1,0 +1,54 @@
+{
+    "date": "2026-02-12 20:30",
+    "experiment_name": "SVM Polynomial Kernel",
+    "results": {
+        "performance_estimation": {
+            "description": "Performance estimated via nested cross-validation",
+            "nested_cv": {
+                "accuracy": {
+                    "scores_mean": 0.8616352201257861,
+                    "scores_std": 0.01822814685055275,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.8363304955757641,
+                        "upper_bound": 0.8869399446758081,
+                        "margin_of_error": 0.025304724550021928,
+                        "standard_error": 0.009114073425276375
+                    }
+                },
+                "f1_macro": {
+                    "scores_mean": 0.6679840211939588,
+                    "scores_std": 0.041507079784933024,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.6103629569439929,
+                        "upper_bound": 0.7256050854439248,
+                        "margin_of_error": 0.057621064249965895,
+                        "standard_error": 0.020753539892466512
+                    }
+                }
+            }
+        },
+        "final_model": {
+            "description": "Best parameters found by fitting GridSearchCV on the entire dataset",
+            "best_params": {
+                "dim_reduction__n_components": 25,
+                "model__C": 0.1,
+                "model__class_weight": "balanced",
+                "model__degree": 4,
+                "model__gamma": "scale",
+                "model__kernel": "poly"
+            },
+            "best_score_metric": "accuracy",
+            "best_score": 0.8679245283018867
+        },
+        "test_performance": {
+            "accuracy": 0.8585858585858586,
+            "f1_macro": 0.6681034482758621,
+            "precision_macro": 0.7520604395604396,
+            "recall_macro": 0.6381777108433735,
+            "precision_weighted": 0.838050838050838,
+            "recall_weighted": 0.8585858585858586
+        }
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "date": "2026-02-06 17:02",
+    "experiment_name": "Logistic Regression Classification with LBFGS",
+    "results": {
+        "performance_estimation": {
+            "description": "Performance estimated via nested cross-validation",
+            "nested_cv": {
+                "accuracy": {
+                    "scores_mean": 0.7487179487179486,
+                    "scores_std": 0.04971979340939823,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.6796958101964639,
+                        "upper_bound": 0.8177400872394334,
+                        "margin_of_error": 0.06902213852148474,
+                        "standard_error": 0.024859896704699114
+                    }
+                },
+                "f1_macro": {
+                    "scores_mean": 0.7008319821020879,
+                    "scores_std": 0.05701232315455589,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.6216861893228769,
+                        "upper_bound": 0.7799777748812988,
+                        "margin_of_error": 0.07914579277921091,
+                        "standard_error": 0.028506161577277946
+                    }
+                }
+            }
+        },
+        "final_model": {
+            "description": "Best parameters found by fitting GridSearchCV on the entire dataset",
+            "best_params": {
+                "dim_reduction__n_components": 10,
+                "model__C": 10.0,
+                "model__max_iter": 1000,
+                "model__penalty": "l2",
+                "model__solver": "lbfgs"
+            },
+            "best_score_metric": "accuracy",
+            "best_score": 0.7769230769230769
+        },
+        "test_performance": {
+            "accuracy": 0.7142857142857143,
+            "f1_macro": 0.65,
+            "precision_macro": 0.6866028708133971,
+            "recall_macro": 0.6433823529411764,
+            "precision_weighted": 0.7019822282980177,
+            "recall_weighted": 0.7142857142857143
+        }
+    }
+}

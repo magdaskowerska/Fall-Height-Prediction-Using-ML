@@ -1,0 +1,53 @@
+{
+    "date": "2026-02-06 16:50",
+    "experiment_name": "SVM Polynomial Kernel",
+    "results": {
+        "performance_estimation": {
+            "description": "Performance estimated via nested cross-validation",
+            "nested_cv": {
+                "accuracy": {
+                    "scores_mean": 0.6538461538461539,
+                    "scores_std": 0.04796996649710183,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.5872531645074635,
+                        "upper_bound": 0.7204391431848443,
+                        "margin_of_error": 0.06659298933869037,
+                        "standard_error": 0.02398498324855091
+                    }
+                },
+                "f1_macro": {
+                    "scores_mean": 0.6305361945730602,
+                    "scores_std": 0.04884896303966324,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.5627229624103296,
+                        "upper_bound": 0.6983494267357908,
+                        "margin_of_error": 0.06781323216273058,
+                        "standard_error": 0.024424481519831617
+                    }
+                }
+            }
+        },
+        "final_model": {
+            "description": "Best parameters found by fitting GridSearchCV on the entire dataset",
+            "best_params": {
+                "dim_reduction__n_components": 15,
+                "model__C": 1.0,
+                "model__degree": 2,
+                "model__gamma": "scale",
+                "model__kernel": "poly"
+            },
+            "best_score_metric": "accuracy",
+            "best_score": 0.7256410256410257
+        },
+        "test_performance": {
+            "accuracy": 0.6530612244897959,
+            "f1_macro": 0.5989407799711122,
+            "precision_macro": 0.6705128205128206,
+            "recall_macro": 0.6130952380952381,
+            "precision_weighted": 0.6663003663003663,
+            "recall_weighted": 0.6530612244897959
+        }
+    }
+}

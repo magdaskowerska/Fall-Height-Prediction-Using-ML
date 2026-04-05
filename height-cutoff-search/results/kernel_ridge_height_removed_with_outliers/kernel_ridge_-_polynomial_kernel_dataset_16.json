@@ -1,0 +1,61 @@
+{
+    "date": "2026-02-07 11:25",
+    "experiment_name": "Kernel Ridge - Polynomial Kernel on dataset_16",
+    "results": {
+        "performance_estimation": {
+            "description": "Performance estimated via nested cross-validation",
+            "nested_cv": {
+                "neg_mean_absolute_error": {
+                    "scores_mean": -7.3527471681378795,
+                    "scores_std": 0.8741418217567033,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": -8.566250559270422,
+                        "upper_bound": -6.139243777005337,
+                        "margin_of_error": 1.2135033911325428,
+                        "standard_error": 0.43707091087835165
+                    }
+                },
+                "neg_root_mean_squared_error": {
+                    "scores_mean": -9.359882488511667,
+                    "scores_std": 0.9149840446879656,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": -10.63008397461566,
+                        "upper_bound": -8.089681002407675,
+                        "margin_of_error": 1.270201486103993,
+                        "standard_error": 0.4574920223439828
+                    }
+                },
+                "r2": {
+                    "scores_mean": 0.26405919862490806,
+                    "scores_std": 0.12420735049479988,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.09163175346947083,
+                        "upper_bound": 0.4364866437803453,
+                        "margin_of_error": 0.17242744515543723,
+                        "standard_error": 0.06210367524739993
+                    }
+                }
+            }
+        },
+        "final_model": {
+            "description": "Best parameters found by fitting GridSearchCVon the entire dataset",
+            "best_params": {
+                "dim_reduction__n_components": 20,
+                "model__alpha": 10.0,
+                "model__degree": 3,
+                "model__gamma": 0.1,
+                "model__kernel": "poly"
+            },
+            "best_score_metric": "neg_mean_absolute_error",
+            "best_score": -7.099636129332398
+        },
+        "test_performance": {
+            "mae": 7.665433608654414,
+            "mse": 88.17041717259735,
+            "r2": 0.1796025685577496
+        }
+    }
+}

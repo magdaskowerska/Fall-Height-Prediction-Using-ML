@@ -1,0 +1,13 @@
+[
+    {
+        "experiment_name": "Cap Heights Higher than 18m without removing them",
+        "cap_column_values": {
+            "column_name": "height_of_fall_m",
+            "cutoff_value": 18
+        },
+        "remove_outliers": {
+            "threshold": 1.5,
+            "column_name": "height_of_fall_m"
+        }
+    }
+]

@@ -1,0 +1,59 @@
+{
+    "date": "2026-02-07 12:01",
+    "experiment_name": "Kernel Ridge Linear Kernel on dataset_12",
+    "results": {
+        "performance_estimation": {
+            "description": "Performance estimated via nested cross-validation",
+            "nested_cv": {
+                "neg_mean_absolute_error": {
+                    "scores_mean": -8.281086319752552,
+                    "scores_std": 0.44184102782760404,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": -8.89445999924631,
+                        "upper_bound": -7.667712640258794,
+                        "margin_of_error": 0.6133736794937578,
+                        "standard_error": 0.220920513913802
+                    }
+                },
+                "neg_root_mean_squared_error": {
+                    "scores_mean": -10.596429360020007,
+                    "scores_std": 0.6541215516324058,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": -11.504495650137098,
+                        "upper_bound": -9.688363069902916,
+                        "margin_of_error": 0.9080662901170912,
+                        "standard_error": 0.3270607758162029
+                    }
+                },
+                "r2": {
+                    "scores_mean": 0.12417339273532309,
+                    "scores_std": 0.05458322230701792,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.048399732535201495,
+                        "upper_bound": 0.19994705293544468,
+                        "margin_of_error": 0.07577366020012159,
+                        "standard_error": 0.027291611153508956
+                    }
+                }
+            }
+        },
+        "final_model": {
+            "description": "Best parameters found by fitting GridSearchCVon the entire dataset",
+            "best_params": {
+                "dim_reduction__n_components": 20,
+                "model__alpha": 10.0,
+                "model__kernel": "linear"
+            },
+            "best_score_metric": "neg_mean_absolute_error",
+            "best_score": -8.348912991852727
+        },
+        "test_performance": {
+            "mae": 5.688685012927812,
+            "mse": 68.0437130088939,
+            "r2": 0.48446445975978414
+        }
+    }
+}

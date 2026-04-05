@@ -1,0 +1,59 @@
+{
+    "date": "2026-02-07 12:27",
+    "experiment_name": "Kernel Ridge Linear Kernel on dataset_7",
+    "results": {
+        "performance_estimation": {
+            "description": "Performance estimated via nested cross-validation",
+            "nested_cv": {
+                "neg_mean_absolute_error": {
+                    "scores_mean": -6.644685206250924,
+                    "scores_std": 0.5702429394360842,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": -7.436309315236384,
+                        "upper_bound": -5.8530610972654635,
+                        "margin_of_error": 0.7916241089854603,
+                        "standard_error": 0.2851214697180421
+                    }
+                },
+                "neg_root_mean_squared_error": {
+                    "scores_mean": -8.251797622739478,
+                    "scores_std": 0.7142778681719597,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": -9.243374268158055,
+                        "upper_bound": -7.2602209773209,
+                        "margin_of_error": 0.9915766454185779,
+                        "standard_error": 0.3571389340859798
+                    }
+                },
+                "r2": {
+                    "scores_mean": -0.2887425731988136,
+                    "scores_std": 0.20333899629615237,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": -0.5710223536799564,
+                        "upper_bound": -0.006462792717670807,
+                        "margin_of_error": 0.2822797804811428,
+                        "standard_error": 0.10166949814807617
+                    }
+                }
+            }
+        },
+        "final_model": {
+            "description": "Best parameters found by fitting GridSearchCVon the entire dataset",
+            "best_params": {
+                "dim_reduction__n_components": 15,
+                "model__alpha": 10.0,
+                "model__kernel": "linear"
+            },
+            "best_score_metric": "neg_mean_absolute_error",
+            "best_score": -6.520367159496888
+        },
+        "test_performance": {
+            "mae": 6.436069201479863,
+            "mse": 78.25082762791338,
+            "r2": -0.5118585761565442
+        }
+    }
+}

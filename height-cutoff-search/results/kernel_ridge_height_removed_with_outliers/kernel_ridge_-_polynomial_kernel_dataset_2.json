@@ -1,0 +1,61 @@
+{
+    "date": "2026-02-07 11:17",
+    "experiment_name": "Kernel Ridge - Polynomial Kernel on dataset_2",
+    "results": {
+        "performance_estimation": {
+            "description": "Performance estimated via nested cross-validation",
+            "nested_cv": {
+                "neg_mean_absolute_error": {
+                    "scores_mean": -1.3885877280683487,
+                    "scores_std": 0.16598992957686087,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": -1.6190186918112501,
+                        "upper_bound": -1.1581567643254473,
+                        "margin_of_error": 0.23043096374290134,
+                        "standard_error": 0.08299496478843044
+                    }
+                },
+                "neg_root_mean_squared_error": {
+                    "scores_mean": -1.7290873672370015,
+                    "scores_std": 0.2605183228801597,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": -2.0907447784244813,
+                        "upper_bound": -1.367429956049522,
+                        "margin_of_error": 0.3616574111874795,
+                        "standard_error": 0.13025916144007985
+                    }
+                },
+                "r2": {
+                    "scores_mean": -0.09704538763113187,
+                    "scores_std": 0.4464516930875853,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": -0.7168196966212799,
+                        "upper_bound": 0.522728921359016,
+                        "margin_of_error": 0.619774308990148,
+                        "standard_error": 0.22322584654379263
+                    }
+                }
+            }
+        },
+        "final_model": {
+            "description": "Best parameters found by fitting GridSearchCVon the entire dataset",
+            "best_params": {
+                "dim_reduction__n_components": 25,
+                "model__alpha": 0.1,
+                "model__degree": 2,
+                "model__gamma": 0.01,
+                "model__kernel": "poly"
+            },
+            "best_score_metric": "neg_mean_absolute_error",
+            "best_score": -1.4822918406108876
+        },
+        "test_performance": {
+            "mae": 1.738826351623942,
+            "mse": 3.734025753453774,
+            "r2": -0.8646820241966413
+        }
+    }
+}

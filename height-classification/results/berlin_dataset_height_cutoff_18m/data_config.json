@@ -1,0 +1,6 @@
+{
+    "experiment_name": "Berlin Dataset",
+    "filename_data": "dati_berlino_cleaned.csv",
+    "height_classification_threshold": 18,
+    "features": "bin"
+}

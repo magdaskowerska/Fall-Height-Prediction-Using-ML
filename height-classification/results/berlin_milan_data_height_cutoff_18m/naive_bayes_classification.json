@@ -1,0 +1,50 @@
+{
+    "date": "2026-02-06 19:48",
+    "experiment_name": "Naive Bayes Classification",
+    "results": {
+        "performance_estimation": {
+            "description": "Performance estimated via nested cross-validation",
+            "nested_cv": {
+                "accuracy": {
+                    "scores_mean": 0.6981132075471697,
+                    "scores_std": 0.03280101839095671,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.6525780940686323,
+                        "upper_bound": 0.743648321025707,
+                        "margin_of_error": 0.04553511347853737,
+                        "standard_error": 0.016400509195478356
+                    }
+                },
+                "f1_macro": {
+                    "scores_mean": 0.6611954051280897,
+                    "scores_std": 0.039052640066275845,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.6069816494495582,
+                        "upper_bound": 0.7154091608066212,
+                        "margin_of_error": 0.054213755678531504,
+                        "standard_error": 0.019526320033137923
+                    }
+                }
+            }
+        },
+        "final_model": {
+            "description": "Best parameters found by fitting GridSearchCV on the entire dataset",
+            "best_params": {
+                "dim_reduction__n_components": 15,
+                "model__var_smoothing": 1e-09
+            },
+            "best_score_metric": "accuracy",
+            "best_score": 0.730817610062893
+        },
+        "test_performance": {
+            "accuracy": 0.797979797979798,
+            "f1_macro": 0.7561576354679802,
+            "precision_macro": 0.8077803203661327,
+            "recall_macro": 0.7401785714285714,
+            "precision_weighted": 0.8024177703811571,
+            "recall_weighted": 0.797979797979798
+        }
+    }
+}

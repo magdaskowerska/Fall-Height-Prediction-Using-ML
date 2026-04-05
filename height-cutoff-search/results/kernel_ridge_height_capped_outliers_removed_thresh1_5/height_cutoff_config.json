@@ -1,0 +1,166 @@
+[
+    {
+        "experiment_name": "Cap Heights Higher than 9m without removing them",
+        "cap_column_values": {
+            "column_name": "height_of_fall_m",
+            "cutoff_value": 9
+        }
+    },
+    {
+        "experiment_name": "Cap Heights Higher than 12m without removing them",
+        "cap_column_values": {
+            "column_name": "height_of_fall_m",
+            "cutoff_value": 12
+        }
+    },
+    {
+        "experiment_name": "Cap Heights Higher than 21m without removing them",
+        "cap_column_values": {
+            "column_name": "height_of_fall_m",
+            "cutoff_value": 15
+        }
+    },
+    {
+        "experiment_name": "Cap Heights Higher than 21m without removing them",
+        "cap_column_values": {
+            "column_name": "height_of_fall_m",
+            "cutoff_value": 18
+        },
+        "remove_outliers": {
+            "threshold": 1.5,
+            "column_name": "height_of_fall_m"
+        }
+    },
+    {
+        "experiment_name": "Cap Heights Higher than 21m without removing them",
+        "cap_column_values": {
+            "column_name": "height_of_fall_m",
+            "cutoff_value": 21
+        },
+        "remove_outliers": {
+            "threshold": 1.5,
+            "column_name": "height_of_fall_m"
+        }
+    },
+    {
+        "experiment_name": "Cap Heights Higher than 24m without removing them",
+        "cap_column_values": {
+            "column_name": "height_of_fall_m",
+            "cutoff_value": 24
+        },
+        "remove_outliers": {
+            "threshold": 1.5,
+            "column_name": "height_of_fall_m"
+        }
+    },
+    {
+        "experiment_name": "Cap Heights Higher than 27m without removing them",
+        "cap_column_values": {
+            "column_name": "height_of_fall_m",
+            "cutoff_value": 27
+        },
+        "remove_outliers": {
+            "threshold": 1.5,
+            "column_name": "height_of_fall_m"
+        }
+    },
+    {
+        "experiment_name": "Cap Heights Higher than 30m without removing them",
+        "cap_column_values": {
+            "column_name": "height_of_fall_m",
+            "cutoff_value": 30
+        },
+        "remove_outliers": {
+            "threshold": 1.5,
+            "column_name": "height_of_fall_m"
+        }
+    },
+    {
+        "experiment_name": "Cap Heights Higher than 33m without removing them",
+        "cap_column_values": {
+            "column_name": "height_of_fall_m",
+            "cutoff_value": 33
+        },
+        "remove_outliers": {
+            "threshold": 1.5,
+            "column_name": "height_of_fall_m"
+        }
+    },
+    {
+        "experiment_name": "Cap Heights Higher than 36m without removing them",
+        "cap_column_values": {
+            "column_name": "height_of_fall_m",
+            "cutoff_value": 36
+        },
+        "remove_outliers": {
+            "threshold": 1.5,
+            "column_name": "height_of_fall_m"
+        }
+    },
+    {
+        "experiment_name": "Cap Heights Higher than 39m without removing them",
+        "cap_column_values": {
+            "column_name": "height_of_fall_m",
+            "cutoff_value": 39
+        },
+        "remove_outliers": {
+            "threshold": 1.5,
+            "column_name": "height_of_fall_m"
+        }
+    },
+    {
+        "experiment_name": "Cap Heights Higher than 42m without removing them",
+        "cap_column_values": {
+            "column_name": "height_of_fall_m",
+            "cutoff_value": 42
+        },
+        "remove_outliers": {
+            "threshold": 1.5,
+            "column_name": "height_of_fall_m"
+        }
+    },
+    {
+        "experiment_name": "Cap Heights Higher than 21m without removing them",
+        "cap_column_values": {
+            "column_name": "height_of_fall_m",
+            "cutoff_value": 45
+        },
+        "remove_outliers": {
+            "threshold": 1.5,
+            "column_name": "height_of_fall_m"
+        }
+    },
+    {
+        "experiment_name": "Cap Heights Higher than 21m without removing them",
+        "cap_column_values": {
+            "column_name": "height_of_fall_m",
+            "cutoff_value": 48
+        },
+        "remove_outliers": {
+            "threshold": 1.5,
+            "column_name": "height_of_fall_m"
+        }
+    },
+    {
+        "experiment_name": "Cap Heights Higher than 21m without removing them",
+        "cap_column_values": {
+            "column_name": "height_of_fall_m",
+            "cutoff_value": 51
+        },
+        "remove_outliers": {
+            "threshold": 1.5,
+            "column_name": "height_of_fall_m"
+        }
+    },
+    {
+        "experiment_name": "Cap Heights Higher than 21m without removing them",
+        "cap_column_values": {
+            "column_name": "height_of_fall_m",
+            "cutoff_value": 54
+        },
+        "remove_outliers": {
+            "threshold": 1.5,
+            "column_name": "height_of_fall_m"
+        }
+    }
+]

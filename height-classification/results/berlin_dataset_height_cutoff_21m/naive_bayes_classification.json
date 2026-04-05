@@ -1,0 +1,50 @@
+{
+    "date": "2026-02-06 17:13",
+    "experiment_name": "Naive Bayes Classification",
+    "results": {
+        "performance_estimation": {
+            "description": "Performance estimated via nested cross-validation",
+            "nested_cv": {
+                "accuracy": {
+                    "scores_mean": 0.7333333333333334,
+                    "scores_std": 0.02051282051282049,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.7048569732800227,
+                        "upper_bound": 0.7618096933866441,
+                        "margin_of_error": 0.028476360053310723,
+                        "standard_error": 0.010256410256410244
+                    }
+                },
+                "f1_macro": {
+                    "scores_mean": 0.6815814073993692,
+                    "scores_std": 0.029039799347733826,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.6412677030218983,
+                        "upper_bound": 0.7218951117768402,
+                        "margin_of_error": 0.0403137043774709,
+                        "standard_error": 0.014519899673866911
+                    }
+                }
+            }
+        },
+        "final_model": {
+            "description": "Best parameters found by fitting GridSearchCV on the entire dataset",
+            "best_params": {
+                "dim_reduction__n_components": 20,
+                "model__var_smoothing": 1e-09
+            },
+            "best_score_metric": "accuracy",
+            "best_score": 0.7461538461538462
+        },
+        "test_performance": {
+            "accuracy": 0.5714285714285714,
+            "f1_macro": 0.48575712143928035,
+            "precision_macro": 0.49099099099099097,
+            "recall_macro": 0.49264705882352944,
+            "precision_weighted": 0.5392535392535392,
+            "recall_weighted": 0.5714285714285714
+        }
+    }
+}

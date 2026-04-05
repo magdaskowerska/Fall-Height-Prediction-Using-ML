@@ -1,0 +1,50 @@
+{
+    "date": "2026-02-06 18:14",
+    "experiment_name": "Naive Bayes Classification",
+    "results": {
+        "performance_estimation": {
+            "description": "Performance estimated via nested cross-validation",
+            "nested_cv": {
+                "accuracy": {
+                    "scores_mean": 0.6918238993710691,
+                    "scores_std": 0.02028240942968188,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.6636674011797402,
+                        "upper_bound": 0.7199803975623981,
+                        "margin_of_error": 0.02815649819132897,
+                        "standard_error": 0.01014120471484094
+                    }
+                },
+                "f1_macro": {
+                    "scores_mean": 0.6871695876725701,
+                    "scores_std": 0.02139803245289013,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.6574643564402248,
+                        "upper_bound": 0.7168748189049153,
+                        "margin_of_error": 0.029705231232345218,
+                        "standard_error": 0.010699016226445063
+                    }
+                }
+            }
+        },
+        "final_model": {
+            "description": "Best parameters found by fitting GridSearchCV on the entire dataset",
+            "best_params": {
+                "dim_reduction__n_components": 10,
+                "model__var_smoothing": 1e-09
+            },
+            "best_score_metric": "accuracy",
+            "best_score": 0.7132075471698113
+        },
+        "test_performance": {
+            "accuracy": 0.7373737373737373,
+            "f1_macro": 0.7273305084745763,
+            "precision_macro": 0.7509049773755656,
+            "recall_macro": 0.7274405250205087,
+            "precision_weighted": 0.7478495360848303,
+            "recall_weighted": 0.7373737373737373
+        }
+    }
+}

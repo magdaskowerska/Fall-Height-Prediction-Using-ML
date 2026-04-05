@@ -1,0 +1,51 @@
+{
+    "date": "2026-02-06 18:25",
+    "experiment_name": "SVM Linear Kernel",
+    "results": {
+        "performance_estimation": {
+            "description": "Performance estimated via nested cross-validation",
+            "nested_cv": {
+                "accuracy": {
+                    "scores_mean": 0.7333333333333333,
+                    "scores_std": 0.03294541095272657,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.6875977708441194,
+                        "upper_bound": 0.7790688958225471,
+                        "margin_of_error": 0.04573556248921381,
+                        "standard_error": 0.016472705476363283
+                    }
+                },
+                "f1_macro": {
+                    "scores_mean": 0.6887787907154833,
+                    "scores_std": 0.04314711961423009,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.6288809861873268,
+                        "upper_bound": 0.7486765952436398,
+                        "margin_of_error": 0.05989780452815653,
+                        "standard_error": 0.021573559807115044
+                    }
+                }
+            }
+        },
+        "final_model": {
+            "description": "Best parameters found by fitting GridSearchCV on the entire dataset",
+            "best_params": {
+                "dim_reduction__n_components": 25,
+                "model__C": 1.0,
+                "model__kernel": "linear"
+            },
+            "best_score_metric": "accuracy",
+            "best_score": 0.7459119496855346
+        },
+        "test_performance": {
+            "accuracy": 0.8282828282828283,
+            "f1_macro": 0.7947811242531398,
+            "precision_macro": 0.8441666666666667,
+            "recall_macro": 0.7765625,
+            "precision_weighted": 0.8351346801346802,
+            "recall_weighted": 0.8282828282828283
+        }
+    }
+}

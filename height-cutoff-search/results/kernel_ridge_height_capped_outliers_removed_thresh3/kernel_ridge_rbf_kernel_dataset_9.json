@@ -1,0 +1,60 @@
+{
+    "date": "2026-02-07 12:06",
+    "experiment_name": "Kernel Ridge RBF Kernel on dataset_9",
+    "results": {
+        "performance_estimation": {
+            "description": "Performance estimated via nested cross-validation",
+            "nested_cv": {
+                "neg_mean_absolute_error": {
+                    "scores_mean": -6.25956093878771,
+                    "scores_std": 0.48696722271958254,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": -6.935579819743486,
+                        "upper_bound": -5.583542057831934,
+                        "margin_of_error": 0.6760188809557756,
+                        "standard_error": 0.24348361135979124
+                    }
+                },
+                "neg_root_mean_squared_error": {
+                    "scores_mean": -7.612573307835771,
+                    "scores_std": 0.4451326663337834,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": -8.23051651413881,
+                        "upper_bound": -6.994630101532732,
+                        "margin_of_error": 0.617943206303039,
+                        "standard_error": 0.2225663331668917
+                    }
+                },
+                "r2": {
+                    "scores_mean": 0.2986504372709143,
+                    "scores_std": 0.07353177953932773,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.19657196258168924,
+                        "upper_bound": 0.4007289119601393,
+                        "margin_of_error": 0.10207847468922505,
+                        "standard_error": 0.03676588976966386
+                    }
+                }
+            }
+        },
+        "final_model": {
+            "description": "Best parameters found by fitting GridSearchCVon the entire dataset",
+            "best_params": {
+                "dim_reduction__n_components": 20,
+                "model__alpha": 0.1,
+                "model__gamma": 0.01,
+                "model__kernel": "rbf"
+            },
+            "best_score_metric": "neg_mean_absolute_error",
+            "best_score": -6.315138942076437
+        },
+        "test_performance": {
+            "mae": 5.509044365079426,
+            "mse": 44.63328298450308,
+            "r2": 0.5091660504975604
+        }
+    }
+}

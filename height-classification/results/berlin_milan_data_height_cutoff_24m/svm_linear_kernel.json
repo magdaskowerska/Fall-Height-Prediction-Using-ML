@@ -1,0 +1,51 @@
+{
+    "date": "2026-02-06 21:06",
+    "experiment_name": "SVM Linear Kernel",
+    "results": {
+        "performance_estimation": {
+            "description": "Performance estimated via nested cross-validation",
+            "nested_cv": {
+                "accuracy": {
+                    "scores_mean": 0.879245283018868,
+                    "scores_std": 0.012195421024946737,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.8623153245135982,
+                        "upper_bound": 0.8961752415241377,
+                        "margin_of_error": 0.016929958505269842,
+                        "standard_error": 0.006097710512473368
+                    }
+                },
+                "f1_macro": {
+                    "scores_mean": 0.7001492604369957,
+                    "scores_std": 0.0535127290050834,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.6258616831810256,
+                        "upper_bound": 0.7744368376929657,
+                        "margin_of_error": 0.07428757725597004,
+                        "standard_error": 0.026756364502541704
+                    }
+                }
+            }
+        },
+        "final_model": {
+            "description": "Best parameters found by fitting GridSearchCV on the entire dataset",
+            "best_params": {
+                "dim_reduction__n_components": 10,
+                "model__C": 1.0,
+                "model__kernel": "linear"
+            },
+            "best_score_metric": "accuracy",
+            "best_score": 0.8767295597484277
+        },
+        "test_performance": {
+            "accuracy": 0.8686868686868687,
+            "f1_macro": 0.7024277456647399,
+            "precision_macro": 0.7777777777777777,
+            "recall_macro": 0.6694277108433735,
+            "precision_weighted": 0.8529741863075196,
+            "recall_weighted": 0.8686868686868687
+        }
+    }
+}

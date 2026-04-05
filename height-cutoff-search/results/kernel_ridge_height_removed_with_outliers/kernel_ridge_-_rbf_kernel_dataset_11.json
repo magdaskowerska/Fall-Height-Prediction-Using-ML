@@ -1,0 +1,60 @@
+{
+    "date": "2026-02-07 11:13",
+    "experiment_name": "Kernel Ridge - RBF Kernel on dataset_11",
+    "results": {
+        "performance_estimation": {
+            "description": "Performance estimated via nested cross-validation",
+            "nested_cv": {
+                "neg_mean_absolute_error": {
+                    "scores_mean": -6.11039104059393,
+                    "scores_std": 0.13566562126047382,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": -6.29872511564006,
+                        "upper_bound": -5.9220569655477995,
+                        "margin_of_error": 0.18833407504613048,
+                        "standard_error": 0.06783281063023691
+                    }
+                },
+                "neg_root_mean_squared_error": {
+                    "scores_mean": -7.516507234787889,
+                    "scores_std": 0.2580129332512685,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": -7.874686607589495,
+                        "upper_bound": -7.158327861986284,
+                        "margin_of_error": 0.35817937280160533,
+                        "standard_error": 0.12900646662563423
+                    }
+                },
+                "r2": {
+                    "scores_mean": 0.14594073872368812,
+                    "scores_std": 0.07799309439329806,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.03766896613993699,
+                        "upper_bound": 0.25421251130743927,
+                        "margin_of_error": 0.10827177258375113,
+                        "standard_error": 0.03899654719664903
+                    }
+                }
+            }
+        },
+        "final_model": {
+            "description": "Best parameters found by fitting GridSearchCVon the entire dataset",
+            "best_params": {
+                "dim_reduction__n_components": 15,
+                "model__alpha": 0.1,
+                "model__gamma": 0.01,
+                "model__kernel": "rbf"
+            },
+            "best_score_metric": "neg_mean_absolute_error",
+            "best_score": -6.054628970968033
+        },
+        "test_performance": {
+            "mae": 5.32359528506501,
+            "mse": 42.08022679724773,
+            "r2": 0.12424912317758163
+        }
+    }
+}

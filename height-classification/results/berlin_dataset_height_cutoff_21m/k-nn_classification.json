@@ -1,0 +1,52 @@
+{
+    "date": "2026-02-06 17:13",
+    "experiment_name": "k-NN Classification",
+    "results": {
+        "performance_estimation": {
+            "description": "Performance estimated via nested cross-validation",
+            "nested_cv": {
+                "accuracy": {
+                    "scores_mean": 0.7256410256410256,
+                    "scores_std": 0.04021637728553365,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.6698117437094218,
+                        "upper_bound": 0.7814703075726295,
+                        "margin_of_error": 0.05582928193160391,
+                        "standard_error": 0.02010818864276682
+                    }
+                },
+                "f1_macro": {
+                    "scores_mean": 0.6565826300419091,
+                    "scores_std": 0.040262954476793816,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.6006886886029611,
+                        "upper_bound": 0.7124765714808571,
+                        "margin_of_error": 0.055893941438947985,
+                        "standard_error": 0.020131477238396905
+                    }
+                }
+            }
+        },
+        "final_model": {
+            "description": "Best parameters found by fitting GridSearchCV on the entire dataset",
+            "best_params": {
+                "dim_reduction__n_components": 10,
+                "model__metric": "manhattan",
+                "model__n_neighbors": 9,
+                "model__weights": "distance"
+            },
+            "best_score_metric": "accuracy",
+            "best_score": 0.7256410256410257
+        },
+        "test_performance": {
+            "accuracy": 0.7346938775510204,
+            "f1_macro": 0.650958904109589,
+            "precision_macro": 0.7408536585365854,
+            "recall_macro": 0.6452205882352942,
+            "precision_weighted": 0.7380537580886013,
+            "recall_weighted": 0.7346938775510204
+        }
+    }
+}

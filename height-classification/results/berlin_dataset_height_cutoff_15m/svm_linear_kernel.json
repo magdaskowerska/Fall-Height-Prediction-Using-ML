@@ -1,0 +1,51 @@
+{
+    "date": "2026-02-06 16:28",
+    "experiment_name": "SVM Linear Kernel",
+    "results": {
+        "performance_estimation": {
+            "description": "Performance estimated via nested cross-validation",
+            "nested_cv": {
+                "accuracy": {
+                    "scores_mean": 0.7,
+                    "scores_std": 0.05767806091898457,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.6199300150420923,
+                        "upper_bound": 0.7800699849579076,
+                        "margin_of_error": 0.08006998495790757,
+                        "standard_error": 0.028839030459492283
+                    }
+                },
+                "f1_macro": {
+                    "scores_mean": 0.6988679132371607,
+                    "scores_std": 0.0580886839491501,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.6182278921281609,
+                        "upper_bound": 0.7795079343461605,
+                        "margin_of_error": 0.08064002110899986,
+                        "standard_error": 0.029044341974575047
+                    }
+                }
+            }
+        },
+        "final_model": {
+            "description": "Best parameters found by fitting GridSearchCV on the entire dataset",
+            "best_params": {
+                "dim_reduction__n_components": 20,
+                "model__C": 0.01,
+                "model__kernel": "linear"
+            },
+            "best_score_metric": "accuracy",
+            "best_score": 0.7128205128205128
+        },
+        "test_performance": {
+            "accuracy": 0.7142857142857143,
+            "f1_macro": 0.7132107023411371,
+            "precision_macro": 0.7154882154882155,
+            "recall_macro": 0.7133333333333334,
+            "precision_weighted": 0.7152477152477152,
+            "recall_weighted": 0.7142857142857143
+        }
+    }
+}

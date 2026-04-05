@@ -1,0 +1,6 @@
+model_name,dataset,mae,std,confidence_interval_mae
+Kernel Ridge RobustScaler SVD1,dataset_1_cutoff_18,2.84819779071777,0.228816348044934,2.8482 ±0.3176
+Kernel Ridge RobustScaler SVD2,dataset_1_cutoff_18,2.875573847399573,0.3303293023780166,2.8756 ±0.4586
+Kernel Ridge RobustScaler SVD3,dataset_1_cutoff_18,2.8367974588792206,0.1331027050564084,2.8368 ±0.1848
+Kernel Ridge RobustScaler SVD4,dataset_1_cutoff_18,2.8459560291221635,0.2139883375064502,2.8460 ±0.2971
+Kernel Ridge RobustScaler SVD5,dataset_1_cutoff_18,2.883592989945891,0.19363378452118993,2.8836 ±0.2688

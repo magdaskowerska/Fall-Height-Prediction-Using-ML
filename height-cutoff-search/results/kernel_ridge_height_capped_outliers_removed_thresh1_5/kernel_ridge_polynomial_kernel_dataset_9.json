@@ -1,0 +1,61 @@
+{
+    "date": "2026-02-07 12:41",
+    "experiment_name": "Kernel Ridge Polynomial Kernel on dataset_9",
+    "results": {
+        "performance_estimation": {
+            "description": "Performance estimated via nested cross-validation",
+            "nested_cv": {
+                "neg_mean_absolute_error": {
+                    "scores_mean": -6.1304340379272375,
+                    "scores_std": 0.40924373384802437,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": -6.698555418764847,
+                        "upper_bound": -5.562312657089628,
+                        "margin_of_error": 0.568121380837609,
+                        "standard_error": 0.20462186692401219
+                    }
+                },
+                "neg_root_mean_squared_error": {
+                    "scores_mean": -7.5257948137128405,
+                    "scores_std": 0.5022412013710738,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": -8.22301737630053,
+                        "upper_bound": -6.82857225112515,
+                        "margin_of_error": 0.6972225625876899,
+                        "standard_error": 0.2511206006855369
+                    }
+                },
+                "r2": {
+                    "scores_mean": 0.287426615576588,
+                    "scores_std": 0.06888509390409103,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.19179877468103584,
+                        "upper_bound": 0.38305445647214015,
+                        "margin_of_error": 0.09562784089555214,
+                        "standard_error": 0.034442546952045516
+                    }
+                }
+            }
+        },
+        "final_model": {
+            "description": "Best parameters found by fitting GridSearchCVon the entire dataset",
+            "best_params": {
+                "dim_reduction__n_components": 20,
+                "model__alpha": 0.1,
+                "model__degree": 2,
+                "model__gamma": 0.01,
+                "model__kernel": "poly"
+            },
+            "best_score_metric": "neg_mean_absolute_error",
+            "best_score": -5.977473448823332
+        },
+        "test_performance": {
+            "mae": 6.319484240464901,
+            "mse": 67.52949432323865,
+            "r2": 0.11784462382641803
+        }
+    }
+}

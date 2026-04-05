@@ -1,0 +1,50 @@
+{
+    "date": "2026-02-06 17:00",
+    "experiment_name": "Naive Bayes Classification",
+    "results": {
+        "performance_estimation": {
+            "description": "Performance estimated via nested cross-validation",
+            "nested_cv": {
+                "accuracy": {
+                    "scores_mean": 0.6897435897435897,
+                    "scores_std": 0.01884222879063984,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.6635863827951952,
+                        "upper_bound": 0.7159007966919843,
+                        "margin_of_error": 0.02615720694839451,
+                        "standard_error": 0.00942111439531992
+                    }
+                },
+                "f1_macro": {
+                    "scores_mean": 0.6761545976262571,
+                    "scores_std": 0.01825754199072555,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.6508090660797105,
+                        "upper_bound": 0.7015001291728037,
+                        "margin_of_error": 0.025345531546546608,
+                        "standard_error": 0.009128770995362773
+                    }
+                }
+            }
+        },
+        "final_model": {
+            "description": "Best parameters found by fitting GridSearchCV on the entire dataset",
+            "best_params": {
+                "dim_reduction__n_components": 10,
+                "model__var_smoothing": 1e-09
+            },
+            "best_score_metric": "accuracy",
+            "best_score": 0.7205128205128205
+        },
+        "test_performance": {
+            "accuracy": 0.7142857142857143,
+            "f1_macro": 0.6847426470588236,
+            "precision_macro": 0.7318376068376069,
+            "recall_macro": 0.6845238095238095,
+            "precision_weighted": 0.7264957264957265,
+            "recall_weighted": 0.7142857142857143
+        }
+    }
+}

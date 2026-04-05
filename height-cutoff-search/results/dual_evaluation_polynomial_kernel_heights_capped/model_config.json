@@ -1,0 +1,70 @@
+[
+    {
+        "experiment_name": "Kernel Ridge RobustScaler SVD",
+        "model_class": "KernelRidge",
+        "enable": true,
+        "dual_evaluation_at_height_cutoff": 21,
+        "parameters": {
+            "dim_reduction__n_components": [
+                15,
+                20,
+                25
+            ],
+            "model__alpha": [
+                0.01,
+                0.1,
+                1.0,
+                10.0
+            ],
+            "model__kernel": [
+                "poly"
+            ],
+            "model__degree": [
+                2,
+                3,
+                4
+            ],
+            "model__gamma": [
+                0.01,
+                0.1,
+                1.0
+            ]
+        },
+        "features": "bin",
+        "preprocessing_steps": [
+            {
+                "name": "OrdinalEncoder",
+                "apply_to": "categorical",
+                "params": {
+                    "handle_unknown": "use_encoded_value",
+                    "unknown_value": -1,
+                    "encoded_missing_value": -1
+                }
+            },
+            {
+                "name": "RobustScaler",
+                "apply_to": "numerical"
+            }
+        ],
+        "outer_cross_validation": {
+            "strategy": "KFold",
+            "n_splits": 5,
+            "shuffle": true,
+            "random_state": 24
+        },
+        "inner_cross_validation": {
+            "strategy": "KFold",
+            "n_splits": 3,
+            "shuffle": true,
+            "random_state": 24
+        },
+        "metrics": [
+            "neg_mean_absolute_error",
+            "neg_root_mean_squared_error",
+            "r2"
+        ],
+        "dim_reduction": {
+            "name": "SVD"
+        }
+    }
+]

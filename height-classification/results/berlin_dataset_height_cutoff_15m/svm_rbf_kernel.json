@@ -1,0 +1,52 @@
+{
+    "date": "2026-02-06 16:29",
+    "experiment_name": "SVM RBF Kernel",
+    "results": {
+        "performance_estimation": {
+            "description": "Performance estimated via nested cross-validation",
+            "nested_cv": {
+                "accuracy": {
+                    "scores_mean": 0.676923076923077,
+                    "scores_std": 0.03478117940064239,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.6286390592731169,
+                        "upper_bound": 0.725207094573037,
+                        "margin_of_error": 0.048284017649960036,
+                        "standard_error": 0.017390589700321195
+                    }
+                },
+                "f1_macro": {
+                    "scores_mean": 0.6757441345588546,
+                    "scores_std": 0.03473463747213502,
+                    "confidence_interval": {
+                        "confidence_level": 0.95,
+                        "lower_bound": 0.6275247274636899,
+                        "upper_bound": 0.7239635416540193,
+                        "margin_of_error": 0.04821940709516465,
+                        "standard_error": 0.01736731873606751
+                    }
+                }
+            }
+        },
+        "final_model": {
+            "description": "Best parameters found by fitting GridSearchCV on the entire dataset",
+            "best_params": {
+                "dim_reduction__n_components": 10,
+                "model__C": 1.0,
+                "model__gamma": 0.01,
+                "model__kernel": "rbf"
+            },
+            "best_score_metric": "accuracy",
+            "best_score": 0.7102564102564103
+        },
+        "test_performance": {
+            "accuracy": 0.7346938775510204,
+            "f1_macro": 0.7342511472674176,
+            "precision_macro": 0.7349498327759196,
+            "recall_macro": 0.7341666666666666,
+            "precision_weighted": 0.7348645143676199,
+            "recall_weighted": 0.7346938775510204
+        }
+    }
+}
